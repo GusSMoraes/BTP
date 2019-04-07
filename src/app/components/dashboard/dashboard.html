@@ -1,0 +1,54 @@
+<alerts></alerts>
+
+<div class="row">
+    <div class="col-lg-150 col-md-6 col-xs-12">
+        <rd-widget>
+            <rd-widget-body>
+                <div class="widget-icon green pull-left">
+                    <i class="fa fa-users"></i>
+                </div>
+                <div class="title">Cadastro</div>
+                <div class="comment">Navios</div>
+            </rd-widget-body>
+            <form>
+                <div class="form-group">
+                  <p><label for="exampleInputEmail1">Identificador do Navio</label></p>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <p><label for="exampleInputPassword1">Horário de Entrada</label></p>
+                  <input type="email" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                    <p><label for="exampleInputPassword1">Previsão de Saída</label></p>
+                    <input type="email" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="form-group">
+                    <p><label for="exampleInputPassword1"> Quantidade de Operações</label></p>
+                    <input type="email" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="form-group">
+                    <p><label for="exampleInputPassword1">Produtividade</label></p>
+                    <input type="email" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="form-check">
+                    <p><input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Atrasado?</label></p>
+                  </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+        </rd-widget>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <rd-widget>
+            <rd-widget-header icon="fa-tasks" title="Escala de Ternos">
+            </rd-widget-header>
+            <rd-widget-body classes="small p-2">
+                <server-list-view [model]="servers"></server-list-view>
+            </rd-widget-body>
+        </rd-widget>
+    </div>
+</div>
